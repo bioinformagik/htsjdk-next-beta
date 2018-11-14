@@ -10,6 +10,6 @@
 rootProject.name = 'htsjdk-next-beta'
 enableFeaturePreview('IMPROVED_POM_SUPPORT')
 
-include ("core", "cram")
+include ("core", "cram", "docs")
 
 

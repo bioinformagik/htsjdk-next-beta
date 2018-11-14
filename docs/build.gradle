@@ -1,0 +1,18 @@
+plugins {
+	id 'com.github.jruby-gradle.base' version '1.4.0'
+	id 'org.asciidoctor.convert'
+}
+
+repositories {
+    maven { url "http://rubygems-proxy.torquebox.org/releases" }
+}
+
+dependencies {
+    gems 'rubygems:asciidoctor-diagram:1.5.9'
+}
+
+asciidoctor {
+	dependsOn jrubyPrepare
+	gemPath = jrubyPrepare.outputDir
+    requires "asciidoctor-diagram"
+}
