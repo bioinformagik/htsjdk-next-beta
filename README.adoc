@@ -1,0 +1,56 @@
+= htsjdk-next-beta
+:toc: macro
+
+image:http://img.shields.io/badge/language-java-brightgreen.svg[Language, link=https://www.java.com]
+image:https://img.shields.io/badge/license-BSD%203--Clause-blue.svg[License (3-Clause BSD), link=https://opensource.org/licenses/BSD-3-Clause]
+
+Staging ground for the development of the next major version of HTSJDK
+
+toc::[]
+
+== Status
+
+[options="header", cols=2, caption=""]
+.Build
+|===
+| OS | Status
+
+| Linux
+| image:https://travis-ci.org/samtools/htsjdk-next-beta.svg?branch=master[Build Status, link=https://travis-ci.org/samtools/htsjdk-next-beta]
+
+| Windows
+| image:https://ci.appveyor.com/api/projects/status/v4hmvmxhbmcd13xo/branch/master?svg=true[Build Status, link=https://ci.appveyor.com/project/magicDGS/htsjdk-next-beta/branch/master]
+
+|===
+
+== Getting started
+
+=== How to build
+
+* Linux/MacOS
++
+....
+./gradlew assemble
+....
+* Windows
++
+....
+.\gradlew.bat assemble
+....
+
+=== How to test
+
+* Linux/MacOS
++
+....
+./gradlew check
+....
+* Windows
++
+....
+.\gradlew.bat check
+....
+
+== License
+
+Licensed under the 3-Clause BSD License. See the link:LICENSE.txt[] file.
